@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center h-16 relative font-bold p-16">
-      <Link to='/' className='text-3xl pl-6' role="navigation">
+    <nav className="flex justify-between items-center h-16 relative font-bold p-10">
+      <Link to='/' className='text-base ' role="navigation">
         Efficiently.app
       </Link>
       <div className="cursor-pointer md:hidden" onClick={toggle}>
@@ -12,7 +12,7 @@ const Navbar = ({ toggle }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
       </div>
       <div className="md:block hidden">
-        <a className="p-4" href="https://twitter.com/doefficiently">@DoEfficiently</a>
+        <a className="" href="https://twitter.com/doefficiently">@DoEfficiently</a>
       </div>
 
     </nav>

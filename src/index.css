@@ -15,3 +15,8 @@ code {
   font-family: 'Segoe UI', source-code-pro, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.card {
+  @apply flex flex-col justify-around hover:bg-gray-300 bg-gray-200 rounded-3xl font-bold py-40  text-center;
+}
