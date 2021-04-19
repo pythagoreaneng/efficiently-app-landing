@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono">
+    <nav className="flex justify-between items-center h-16 relative ">
       <Link to='/' className='pl-8' role="navigation">
         Efficiently.app
             </Link>
