@@ -18,5 +18,5 @@ code {
 
 
 .card {
-  @apply flex flex-col justify-around hover:bg-gray-300 bg-gray-200 rounded-3xl font-bold py-40  text-center;
+  @apply flex flex-col items-center justify-around hover:bg-gray-300 bg-gray-200 rounded-3xl font-bold py-40  text-center;
 }
