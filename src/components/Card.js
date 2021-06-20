@@ -1,17 +1,35 @@
 import React from 'react'
 
-function Card({title, imageUrl, body}) {
+function Card(props) {
     return (
-        <div className="p-10">
-            <div className="image-container">
-                <img src={imageUrl} alt="" />
+        <div className="m-10 p-12 rounded-xl bg-yellow-200">
+
+            <div className="p-2 text-2xl font-bold">
+                <h3>{props.title}</h3>
             </div>
-            <div className="card-title">
-                <h3>{title}</h3>
+
+            <div className="sm:grid grid-cols-2">
+
+                {/* left container */}
+                <div className="">
+                    
+                    <div className="p-5">
+                        <p>{props.body}</p>
+                    </div>
+
+                </div>
+
+                {/* right container */}
+                <div className="">
+
+                    <div className="image-container">
+                        <img src={props.imageUrl} alt="" />
+                    </div>
+
+                </div>
             </div>
-            <div className="card-body">
-                <p>{body}</p>
-            </div>
+            
+            
         </div>
     )
 }
