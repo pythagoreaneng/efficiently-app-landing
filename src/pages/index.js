@@ -8,8 +8,8 @@ const Home = () => {
             <div className="my-20 text-center">
                 <h1 className="font-bold text-4xl md:text-9xl ">Do <span className="text-blue-400">Efficiently</span></h1>
                 <p>Manage your time and tasks.</p>
-                <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
-                    Early Access
+                <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white" >
+                    <a href="#newsletter">Early Access</a>
                 </button>
             </div>
 
@@ -39,9 +39,12 @@ const Home = () => {
                     title='Live'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
-                <div className="rounded-xl shadow-2xl bg-gray-100 ">
+                
+            </div>
+            <div className="my-10 rounded-xl shadow-2xl bg-gray-100" id="newsletter">
                     <div className='py-28 text-center'>
-                        <label className="font-bold text-3xl md:text-5xl" htmlFor='email'>Join the Waitlist
+                        <label  htmlFor='email'>
+                            <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
                             <p className="mt-2 mb-10 font-thin text-xs">Subscribe to our newsletter to get an early access</p>
                         </label>
                         <form className="">
@@ -60,7 +63,6 @@ const Home = () => {
                         </form>
                     </div>
                 </div>
-            </div>
             
         </div>
     )

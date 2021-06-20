@@ -14,7 +14,7 @@ const Navbar = ({ toggle }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
       </div>
       <div className="invisible sm:visible">
-        <a className="font-bold" href="https://twitter.com/doefficiently">@doefficiently</a>
+        <a className="font-bold rounded-full p-4 bg-blue-400 shadow-sm hover:shadow-lg text-white" href="https://twitter.com/doefficiently">@doefficiently</a>
       </div>
 
     </nav>
