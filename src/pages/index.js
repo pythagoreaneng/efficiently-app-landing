@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <div className="m-10 text-center">
-                <h1 className="font-bold text-4xl ">Do <span className="text-blue-400">Efficiently</span></h1>
+                <h1 className="font-bold text-4xl md:text-9xl ">Do <span className="text-blue-400">Efficiently</span></h1>
                 <p>Manage your time and tasks.</p>
                 <button className="mt-10 px-3 py-2 bg-blue-400 rounded-3xl font-medium text-white">
                     Early Access
@@ -41,7 +41,7 @@ const Home = () => {
                 />
                 <div className="rounded-xl shadow-2xl bg-gray-100 text-center">
                     <div className='p-20'>
-                        <label className="font-bold text-xl" htmlFor='email'>Join the waitlist
+                        <label className="font-bold text-3xl md:text-5xl" htmlFor='email'>Join the waitlist
                             <p className="mt-2 mb-10 font-thin text-xs">Subscribe to get an early access</p>
                         </label>
                         <form className="">
