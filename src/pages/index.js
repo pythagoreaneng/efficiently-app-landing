@@ -13,7 +13,7 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className="m-5 grid justify-items-stretch">
+            <div className="mx-3 grid justify-items-stretch">
                 <Card 
                     style={{backgroundColor: "#EAEC8C"}}
                     title='Plan'
@@ -25,7 +25,7 @@ const Home = () => {
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
                 <Card 
-                    style={{backgroundColor: "#447DD2"}}
+                    style={{backgroundColor: "#BBF5D5"}}
                     title='Think'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
@@ -34,9 +34,26 @@ const Home = () => {
                     title='Play'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
-                <div className="m-5 p-12 rounded-xl shadow-2xl bg-gray-100 text-center">
-                    <h1 className="font-bold text-xl">Join the beta user waitlist</h1>
-                    <p className="font-thin text-xs">Subscribe to our newsletter</p>
+                <div className="my-3 p-12 rounded-xl shadow-2xl bg-gray-100 text-center">
+                    <label className="font-bold text-xl" htmlFor='email'>Join the beta user waitlist
+                    <p className="mt-2 mb-10 font-thin text-xs">Subscribe to our newsletter</p>
+                    
+                    </label>
+                    
+                    <form className="">
+                        <input 
+                                id='email'
+                                type='email'
+                                name='email'
+                                className='rounded-md text-center p-1' 
+                                placeholder='email@example.com'>
+                        </input>
+                        <button
+                            type='submit'
+                            className='ml-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md'>
+                            Early Access
+                        </button>
+                    </form>
                 </div>
             </div>
             

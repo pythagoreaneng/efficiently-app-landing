@@ -6,7 +6,7 @@ const Navbar = ({ toggle }) => {
     <nav className="flex justify-between items-center relative p-10">
       <Link to='/' className='text-base ' role="navigation">
         <img src=''/>
-        <h1 className="text-4xl font-medium text-blue-400 pb-3">Efficiently</h1>
+        <h1 className="text-4xl font-semibold text-blue-400 pb-3">Efficiently</h1>
         <h2 className="font-thin">Upgrade Your Efficiency.</h2>
       </Link>
       <div className="cursor-pointer hidden" onClick={toggle}>
