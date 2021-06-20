@@ -4,16 +4,16 @@ import Card from '../components/Card'
 
 const Home = () => {
     return (
-        <>
-            <div className="m-10 text-center">
+        <div className='m-4 md:m-10'>
+            <div className="my-20 text-center">
                 <h1 className="font-bold text-4xl md:text-9xl ">Do <span className="text-blue-400">Efficiently</span></h1>
                 <p>Manage your time and tasks.</p>
-                <button className="mt-10 px-3 py-2 bg-blue-400 rounded-3xl font-medium text-white">
+                <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
                     Early Access
                 </button>
             </div>
 
-            <div className="m-3 grid md:grid-cols-2 md:m-5 gap-5">
+            <div className="grid gap-4 md:grid-cols-2  md:gap-10">
                 <Card 
                     style={{backgroundColor: "#EAEC8C"}}
                     title='Plan'
@@ -39,10 +39,10 @@ const Home = () => {
                     title='Live'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
-                <div className="rounded-xl shadow-2xl bg-gray-100 text-center">
-                    <div className='p-20'>
-                        <label className="font-bold text-3xl md:text-5xl" htmlFor='email'>Join the waitlist
-                            <p className="mt-2 mb-10 font-thin text-xs">Subscribe to get an early access</p>
+                <div className="rounded-xl shadow-2xl bg-gray-100 ">
+                    <div className='py-28 text-center'>
+                        <label className="font-bold text-3xl md:text-5xl" htmlFor='email'>Join the Waitlist
+                            <p className="mt-2 mb-10 font-thin text-xs">Subscribe to our newsletter to get an early access</p>
                         </label>
                         <form className="">
                             <input 
@@ -62,7 +62,7 @@ const Home = () => {
                 </div>
             </div>
             
-        </>
+        </div>
     )
 }
 

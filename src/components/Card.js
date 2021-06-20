@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card(props) {
     return (
-        <div className="p-12 rounded-xl shadow-2xl bg-gray-100 text-white" style={props.style}>
+        <div className="p-10 rounded-xl shadow-2xl bg-gray-100 text-white" style={props.style}>
 
             <div className="p-2 text-3xl md:text-5xl font-bold">
                 <h3>{props.title} <span className="text-blue-400">Efficiently</span></h3>
