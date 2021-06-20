@@ -1,9 +1,17 @@
 import React from 'react'
 
-function Card() {
+function Card({title, imageUrl, body}) {
     return (
-        <div className="flex justify-start items-center h-20 pl-15 from-gray-50 text-black">
-            <p className="ml-14">&copy; 2021 KN Project</p>
+        <div className="p-10">
+            <div className="image-container">
+                <img src={imageUrl} alt="" />
+            </div>
+            <div className="card-title">
+                <h3>{title}</h3>
+            </div>
+            <div className="card-body">
+                <p>{body}</p>
+            </div>
         </div>
     )
 }
