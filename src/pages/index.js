@@ -51,7 +51,7 @@ const Home = () => {
                         <button
                             type='submit'
                             className='m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md'>
-                            Early Access
+                            Join
                         </button>
                     </form>
                 </div>
