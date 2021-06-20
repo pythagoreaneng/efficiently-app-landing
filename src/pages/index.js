@@ -13,7 +13,7 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className="mx-3 grid justify-items-stretch">
+            <div className="m-3 grid md:grid-cols-2 md:m-5 gap-5">
                 <Card 
                     style={{backgroundColor: "#EAEC8C"}}
                     title='Plan'
@@ -34,26 +34,31 @@ const Home = () => {
                     title='Play'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
-                <div className="my-3 p-12 rounded-xl shadow-2xl bg-gray-100 text-center">
-                    <label className="font-bold text-xl" htmlFor='email'>Join the beta user waitlist
-                    <p className="mt-2 mb-10 font-thin text-xs">Subscribe to our newsletter</p>
-                    
-                    </label>
-                    
-                    <form className="">
-                        <input 
-                                id='email'
-                                type='email'
-                                name='email'
-                                className='rounded-md text-center p-1' 
-                                placeholder='email@example.com'>
-                        </input>
-                        <button
-                            type='submit'
-                            className='m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md'>
-                            Join
-                        </button>
-                    </form>
+                <Card 
+                    style={{backgroundColor: "#D5D4F5"}}
+                    title='Live'
+                    body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
+                />
+                <div className="rounded-xl shadow-2xl bg-gray-100 text-center">
+                    <div className='p-20'>
+                        <label className="font-bold text-xl" htmlFor='email'>Join the waitlist
+                            <p className="mt-2 mb-10 font-thin text-xs">Subscribe to get an early access</p>
+                        </label>
+                        <form className="">
+                            <input 
+                                    id='email'
+                                    type='email'
+                                    name='email'
+                                    className='rounded-md text-center p-1' 
+                                    placeholder='email@example.com'>
+                            </input>
+                            <button
+                                type='submit'
+                                className='m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md'>
+                                Join
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
             
