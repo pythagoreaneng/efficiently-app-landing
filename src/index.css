@@ -4,21 +4,24 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', 'Segoe UI', -apple-system, BlinkMacSystemFont,  'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Roboto", "Segoe UI", -apple-system, BlinkMacSystemFont, "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Segoe UI', source-code-pro, Monaco, Consolas, 'Courier New',
+  font-family: "Segoe UI", source-code-pro, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
 .card {
   @apply flex flex-col items-center justify-around hover:bg-gray-300 bg-gray-200 rounded-3xl font-bold py-40  text-center;
+}
+
+.card-blue {
+  @apply bg-blue-500 hover:bg-blue-700 text-white;
 }
 
 .blue-pulse {
