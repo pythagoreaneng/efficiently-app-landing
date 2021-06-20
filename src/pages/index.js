@@ -50,7 +50,7 @@ const Home = () => {
                         </input>
                         <button
                             type='submit'
-                            className='ml-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md'>
+                            className='m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md'>
                             Early Access
                         </button>
                     </form>
