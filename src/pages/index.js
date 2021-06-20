@@ -7,11 +7,11 @@ const Home = () => {
         <>
             <div className="grid justify-items-stretch">
                 <Card 
-                    title='Plan Efficiently'
+                    title='Plan'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
                 <Card 
-                    title='Work Efficiently'
+                    title='Work'
                     body='Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor. Rem ipsum dolor sit amet,  consectetur adipiscing elit.'
                 />
                 
