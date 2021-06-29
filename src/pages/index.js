@@ -6,7 +6,7 @@ const Home = () => {
     <div className="m-4 md:m-10">
       <div className="my-20 text-center">
         <h1 className="font-bold text-4xl md:text-9xl ">
-          Do <span className="text-blue-400">Efficiently</span>
+          Do <span className="text-blue-400 ">Efficiently</span>
         </h1>
         <p>Manage your time and tasks.</p>
         <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
@@ -50,7 +50,7 @@ const Home = () => {
               Subscribe to our newsletter to get an early access
             </p>
           </label>
-          <form className="">
+          <form className="" name="contact" method="POST" data-netlify="true">
             <input
               id="email"
               type="email"
