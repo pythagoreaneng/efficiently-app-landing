@@ -15,7 +15,7 @@ function Card(props) {
       <div className="sm:grid grid-cols-2">
         {/* left container */}
         <div className="">
-          <div className="p-5 text-gray-700">
+          <div className="p-5 text-gray-600 font-normal">
             <p>{props.body}</p>
           </div>
         </div>
