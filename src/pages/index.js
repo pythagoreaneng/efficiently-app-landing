@@ -57,7 +57,7 @@ const Home = () => {
               name="email"
               className="rounded-md text-center p-1"
               placeholder="email@example.com"
-            ></input>
+            />
             <button
               type="submit"
               className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
