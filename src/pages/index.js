@@ -18,7 +18,7 @@ const Home = () => {
         <Card
           style={{ backgroundColor: "#EAEC8C" }}
           title="Plan"
-          body="WIth a calendar built-in, easily see your tasks, notes, and routines."
+          body="WIth a built-in calendar, easily see your tasks, notes, and routines."
         />
         <Card
           style={{ backgroundColor: "#447DD2" }}
