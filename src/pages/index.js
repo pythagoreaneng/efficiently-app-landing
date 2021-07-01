@@ -4,11 +4,11 @@ import Card from "../components/Card";
 const Home = () => {
   return (
     <div className="m-4 md:m-10">
-      <div className="my-20 text-center">
+      <div className="my-20 text-left">
         <h1 className="font-bold text-4xl md:text-9xl ">
           Do <span className="text-blue-400 ">Efficiently</span>
         </h1>
-        <p>Manage your time and tasks.</p>
+        <p>Manage your time and tasks <span className="text-blue-400 ">Efficiently</span></p>
         <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
           <a href="#newsletter">Early Access</a>
         </button>
@@ -47,7 +47,7 @@ const Home = () => {
           <label htmlFor="email">
             <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
             <p className="mt-2 mb-10 font-thin text-xs">
-              Subscribe to our newsletter to get an early access
+              Subscribe to our newsletter to get early access
             </p>
           </label>
           <form className="" name="contact" method="POST" data-netlify="true">
@@ -57,6 +57,7 @@ const Home = () => {
               name="email"
               className="rounded-md text-center p-1"
               placeholder="email@example.com"
+              require
             />
             <button
               type="submit"

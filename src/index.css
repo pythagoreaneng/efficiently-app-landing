@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", "Segoe UI", -apple-system, BlinkMacSystemFont, "Oxygen",
+  font-family: "Poppins", "Segoe UI", -apple-system, BlinkMacSystemFont, "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,7 +12,7 @@ body {
 }
 
 code {
-  font-family: "Segoe UI", source-code-pro, Monaco, Consolas, "Courier New",
+  font-family: "Poppins", "Segoe UI", source-code-pro, Monaco, Consolas, "Courier New",
     monospace;
 }
 
