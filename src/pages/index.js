@@ -42,6 +42,7 @@ const Home = () => {
           body="Priortize your tasks with reminders all in one place to give you the peace of mind to live freely. "
         />
       </div>
+
       <div className="my-10 rounded-xl shadow-2xl bg-gray-100" id="newsletter">
         <div className="py-28 text-center">
           <label htmlFor="email">
@@ -53,13 +54,12 @@ const Home = () => {
           <form
             className=""
             name="newsletter-form"
-            action="POST"
+            method="POST"
             data-netlify="true"
           >
             <p>
               <lable>
                 <input
-                  id="email"
                   type="email"
                   name="email"
                   className="rounded-md text-center p-1"
@@ -73,7 +73,7 @@ const Home = () => {
                   type="submit"
                   className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
                 >
-                  Join
+                  <span>Join</span>
                 </button>
               </label>
             </p>
