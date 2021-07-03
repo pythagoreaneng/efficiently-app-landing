@@ -50,7 +50,13 @@ const Home = () => {
               Subscribe to our newsletter to get an early access
             </p>
           </label>
-          <form className="" name="contact" method="POST" data-netlify="true">
+          <form
+            className=""
+            name="newsletter-form"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
             <p>
               <lable>
                 <input
