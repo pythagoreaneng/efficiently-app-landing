@@ -77,6 +77,11 @@ const Home = () => {
                 </button>
               </label>
             </p>
+            <p>
+              <label>
+                <div data-netlify-recapture="true"></div>
+              </label>
+            </p>
           </form>
         </div>
       </div>
