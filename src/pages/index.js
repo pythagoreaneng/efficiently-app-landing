@@ -51,19 +51,27 @@ const Home = () => {
             </p>
           </label>
           <form className="" name="contact" method="POST" data-netlify="true">
-            <input
-              id="email"
-              type="email"
-              name="email"
-              className="rounded-md text-center p-1"
-              placeholder="email@example.com"
-            />
-            <button
-              type="submit"
-              className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
-            >
-              Join
-            </button>
+            <p>
+              <lable>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  className="rounded-md text-center p-1"
+                  placeholder="email@example.com"
+                />
+              </lable>
+            </p>
+            <p>
+              <label>
+                <button
+                  type="submit"
+                  className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
+                >
+                  Join
+                </button>
+              </label>
+            </p>
           </form>
         </div>
       </div>
