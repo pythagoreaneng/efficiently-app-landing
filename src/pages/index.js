@@ -56,11 +56,12 @@ const Home = () => {
             name="newsletter-form"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
             <p>
               <lable>
                 <input
-                  type="email"
+                  type="hidden"
                   name="email"
                   className="rounded-md text-center p-1"
                   placeholder="email@example.com"
