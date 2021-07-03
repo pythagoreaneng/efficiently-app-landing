@@ -53,9 +53,8 @@ const Home = () => {
           <form
             className=""
             name="newsletter-form"
-            method="POST"
+            action="POST"
             data-netlify="true"
-            netlify-honeypot="bot-field"
           >
             <p>
               <lable>
