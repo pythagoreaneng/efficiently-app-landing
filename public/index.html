@@ -35,5 +35,22 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <form name="contact" method="POST" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input
+        id="email"
+        type="email"
+        name="email"
+        className="rounded-md text-center p-1"
+        placeholder="email@example.com"
+        require
+      />
+      <button
+        type="submit"
+        className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
+      >
+        Join
+      </button>
+    </form>
   </body>
 </html>
