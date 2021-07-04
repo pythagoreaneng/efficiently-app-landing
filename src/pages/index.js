@@ -39,9 +39,10 @@ const Home = () => {
         <Card
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
-          body="Priortize your tasks with reminders all in one place to give you the peace of mind to live freely. "
+          body="Prioritize your tasks with reminders all in one place to give you the peace of mind to live freely. "
         />
       </div>
+
       <div className="my-10 rounded-xl shadow-2xl bg-gray-100" id="newsletter">
         <div className="py-28 text-center">
           <label htmlFor="email">
@@ -50,7 +51,9 @@ const Home = () => {
               Subscribe to our newsletter to get early access
             </p>
           </label>
+
           <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"></input>
             <input
               id="email"
               type="email"
