@@ -8,7 +8,7 @@ const Card = (props) => {
       className="px-10 py-20 rounded-xl shadow-2xl text-white h-full "
       style={props.style}
     >
-      <div className="p-2 text-2xl md:text-4xl font-bold">
+      <div className="p-2 text-2xl sm:text-5xl font-bold">
         <h3>
           <span className="text-white">{props.title}</span>{" "}
           <span className="text-blue-400">Efficiently</span>
@@ -25,7 +25,7 @@ const Card = (props) => {
         {/* right container */}
         <div className="">
           {content && (
-            <div className="flex justify-center py-20">{props.content}</div>
+            <div className="flex justify-center py-8">{props.content}</div>
           )}
         </div>
       </div>

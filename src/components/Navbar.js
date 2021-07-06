@@ -30,7 +30,9 @@ const Navbar = ({ toggle }) => {
           </svg>
         </div>
         <div>
-          <h1 className="text-4xl font-semibold text-blue-400 text-left">Efficiently</h1>
+          <h1 className="text-4xl font-semibold text-blue-400 text-left">
+            Efficiently
+          </h1>
           <h2 className="font-thin">Upgrade Your Efficiency.</h2>
         </div>
       </Link>

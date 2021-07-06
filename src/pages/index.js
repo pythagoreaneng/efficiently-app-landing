@@ -62,7 +62,7 @@ const Home = () => {
               <Note
                 body={
                   <div>
-                    <div contenteditable="true">
+                    <div contentEditable="true">
                       <p>
                         There is only one success to be able to spend your life
                         in your own way”
