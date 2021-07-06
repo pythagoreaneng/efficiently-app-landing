@@ -121,11 +121,7 @@ const Home = () => {
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
-          image={
-            <div className="animation-pulse">
-              <img className="animation-bounce" src={Face} />
-            </div>
-          }
+          content={<img className="animate-bounce" src={Face} />}
         />
       </div>
 
