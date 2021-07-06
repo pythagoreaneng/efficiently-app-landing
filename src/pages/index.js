@@ -4,6 +4,9 @@ import MainMockup from "../img/Mockup1.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
 import { useState } from "react";
+import Task from "../components/Task";
+import Note from "../components/Note";
+import Waitlist from "../components/Waitlist";
 
 const Home = () => {
   const [cardColor, setCardColor] = useState("#FFD8D7");
@@ -40,12 +43,43 @@ const Home = () => {
           style={{ backgroundColor: "#447DD2" }}
           title="Work"
           body="Organize your tasks and create an everyday routine that empowers you."
+          content={
+            <div className="grid grid-col gap-3">
+              <Task check="true" due="8AM" body="Grab a coffee" />
+              <Task check="true" due="9AM" body="Meeting with Alex" />
+              <Task check="true" due="4PM" body="Go to gym" />
+              <Task check="true" due="7PM" body="Dinner with Sam" />
+            </div>
+          }
         />
         <Card
           style={{ backgroundColor: "#BBF5D5" }}
           title="Think"
           body="Clear your head of daily clutters and focus on the things most important to you.
           "
+          content={
+            <div>
+              <Note
+                body={
+                  <div>
+                    <div contentEditable="true">
+                      <p>
+                        There is only one success to be able to spend your life
+                        in your own way”
+                      </p>
+                      <p>-Christopher Morley</p>
+                      <br />
+                      <p>
+                        Ways to be successful Stay organized Don’t sweat the
+                        small things.
+                      </p>
+                      <p>Fake it until you make it.</p>
+                    </div>
+                  </div>
+                }
+              />
+            </div>
+          }
         />
 
         <Card
@@ -56,13 +90,14 @@ const Home = () => {
             <div className="grid grid-rows-2 gap-4">
               <div className="flex gap-5">
                 <Dot
-                  color={"#FBF689"}
-                  onClick={() => handleCardColor("#FBF689")}
-                />
-                <Dot
                   color={"#C0E5FE"}
                   onClick={() => handleCardColor("#C0E5FE")}
                 />
+                <Dot
+                  color={"#FBF689"}
+                  onClick={() => handleCardColor("#FBF689")}
+                />
+
                 <Dot
                   color={"#BBF5D5"}
                   onClick={() => handleCardColor("#BBF5D5")}
@@ -86,36 +121,11 @@ const Home = () => {
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
-          image={Face}
+          content={<img className="animate-bounce" src={Face} />}
         />
       </div>
 
-      <div className="my-10 rounded-xl shadow-2xl bg-gray-100" id="newsletter">
-        <div className="py-28 text-center">
-          <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
-          <p className="mt-2 mb-10 font-thin text-xs">
-            Subscribe to our newsletter to get early access
-          </p>
-
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <input
-              id="email"
-              type="email"
-              name="email"
-              className="rounded-md text-center p-1"
-              placeholder="email@example.com"
-              require
-            />
-            <button
-              type="submit"
-              className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
-            >
-              Join
-            </button>
-          </form>
-        </div>
-      </div>
+      <Waitlist />
     </div>
   );
 };
