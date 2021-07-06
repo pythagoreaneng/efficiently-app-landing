@@ -6,7 +6,10 @@ import Face from "../img/Face.svg";
 import { useState } from "react";
 
 const Home = () => {
-  const [cardColor, setCardColor] = useState();
+  const [cardColor, setCardColor] = useState("#FFD8D7");
+  const handleCardColor = (cardColor) => {
+    setCardColor(cardColor);
+  };
   return (
     <div className="m-4 md:m-10">
       <div className="my-20 text-left grid sm:grid-cols-2 grid-wrap">
@@ -44,21 +47,40 @@ const Home = () => {
           body="Clear your head of daily clutters and focus on the things most important to you.
           "
         />
+
         <Card
-          style={{ backgroundColor: "#FFD8D7" }}
+          style={{ backgroundColor: cardColor }}
           title="Play"
           body="Personalize to make planning easy and manage time for people who mean most to you."
           content={
             <div className="grid grid-rows-2 gap-4">
               <div className="flex gap-5">
-                <Dot color={"#FFFC00"} />
-                <Dot color={"#C0E5FE"} />
-                <Dot color={"#BBF5D5"} />
+                <Dot
+                  color={"#FFFC00"}
+                  onClick={() => handleCardColor("#FFFC00")}
+                />
+                <Dot
+                  color={"#C0E5FE"}
+                  onClick={() => handleCardColor("#C0E5FE")}
+                />
+                <Dot
+                  color={"#BBF5D5"}
+                  onClick={() => handleCardColor("#BBF5D5")}
+                />
               </div>
               <div className="flex gap-5">
-                <Dot color={"#FFD8D7"} />
-                <Dot color={"#D5D4F5"} />
-                <Dot color={"#F8F8F8"} />
+                <Dot
+                  color={"#FFD8D7"}
+                  onClick={() => handleCardColor("#FFD8D7")}
+                />
+                <Dot
+                  color={"#D5D4F5"}
+                  onClick={() => handleCardColor("#D5D4F5")}
+                />
+                <Dot
+                  color={"#F8F8F8"}
+                  onClick={() => handleCardColor("#F8F8F8")}
+                />
               </div>
             </div>
           }
