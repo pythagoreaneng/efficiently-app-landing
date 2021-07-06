@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import MainMockup from "../img/Mockup1.svg";
 
 const Home = () => {
   return (
@@ -17,8 +18,8 @@ const Home = () => {
             <a href="#newsletter">Early Access</a>
           </button>
         </div>
-        <div className="flex justify-center">
-          <img />
+        <div className="flex justify-center h-full w-full">
+          <img src={MainMockup} />
         </div>
       </div>
 
