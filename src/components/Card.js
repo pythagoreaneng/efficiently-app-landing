@@ -15,12 +15,11 @@ const Card = (props) => {
         </h3>
       </div>
 
-      <div className="sm:grid grid-cols-2">
+      <div className="grid sm:grid-cols-2 ">
         {/* left container */}
-        <div className="">
-          <div className="px-3 py-20 text-gray-600">
-            <p>{props.body}</p>
-          </div>
+
+        <div className="px-3 py-20 text-gray-600">
+          <p>{props.body}</p>
         </div>
 
         {/* right container */}

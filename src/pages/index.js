@@ -4,6 +4,7 @@ import MainMockup from "../img/Mockup1.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
 import { useState } from "react";
+import Task from "../components/Task";
 import Waitlist from "../components/Waitlist";
 
 const Home = () => {
@@ -41,6 +42,14 @@ const Home = () => {
           style={{ backgroundColor: "#447DD2" }}
           title="Work"
           body="Organize your tasks and create an everyday routine that empowers you."
+          content={
+            <div className="grid grid-col gap-3">
+              <Task check="true" due="8AM" body="Grab a coffee" />
+              <Task check="true" due="9AM" body="Meeting with Alex" />
+              <Task check="true" due="4PM" body="Go to gym" />
+              <Task check="true" due="7PM" body="Dinner with Sam" />
+            </div>
+          }
         />
         <Card
           style={{ backgroundColor: "#BBF5D5" }}
