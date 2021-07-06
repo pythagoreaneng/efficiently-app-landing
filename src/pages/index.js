@@ -26,7 +26,7 @@ const Home = () => {
         <Card
           style={{ backgroundColor: "#EAEC8C" }}
           title="Plan"
-          body="WIth a built-in calendar, easily see your tasks, notes, and routines."
+          body="With a built-in calendar, easily see your tasks, notes, and routines."
         />
         <Card
           style={{ backgroundColor: "#447DD2" }}
@@ -42,12 +42,12 @@ const Home = () => {
         <Card
           style={{ backgroundColor: "#FFD8D7" }}
           title="Play"
-          body="With an intuitive drag and drop feature, easily make time for fun and relaxing activities. "
+          body="Personalize to make planning easy and manage time for people who mean most to you."
         />
         <Card
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
-          body="Prioritize your tasks with reminders all in one place to give you the peace of mind to live freely. "
+          body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
         />
       </div>
 
