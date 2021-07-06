@@ -56,8 +56,8 @@ const Home = () => {
             <div className="grid grid-rows-2 gap-4">
               <div className="flex gap-5">
                 <Dot
-                  color={"#FFFC00"}
-                  onClick={() => handleCardColor("#FFFC00")}
+                  color={"#FBF689"}
+                  onClick={() => handleCardColor("#FBF689")}
                 />
                 <Dot
                   color={"#C0E5FE"}
@@ -77,10 +77,7 @@ const Home = () => {
                   color={"#D5D4F5"}
                   onClick={() => handleCardColor("#D5D4F5")}
                 />
-                <Dot
-                  color={"#F8F8F8"}
-                  onClick={() => handleCardColor("#F8F8F8")}
-                />
+                <Dot color={"#111"} onClick={() => handleCardColor("#111")} />
               </div>
             </div>
           }
@@ -89,7 +86,7 @@ const Home = () => {
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
-          image={Face}
+          image={<div className="">Face</div>}
         />
       </div>
 
