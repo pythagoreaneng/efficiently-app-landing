@@ -6,6 +6,7 @@ import Face from "../img/Face.svg";
 import { useState } from "react";
 
 const Home = () => {
+  const [cardColor, setCardColor] = useState();
   return (
     <div className="m-4 md:m-10">
       <div className="my-20 text-left grid sm:grid-cols-2 grid-wrap">
@@ -50,7 +51,7 @@ const Home = () => {
           content={
             <div className="grid grid-rows-2 gap-4">
               <div className="flex gap-5">
-                <Dot color={"#FFFC00"} onClick={() => console.log("Clicked")} />
+                <Dot color={"#FFFC00"} />
                 <Dot color={"#C0E5FE"} />
                 <Dot color={"#BBF5D5"} />
               </div>
