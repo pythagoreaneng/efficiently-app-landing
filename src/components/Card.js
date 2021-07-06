@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   const image = props.imageUrl;
-  const rightContent = props.rightContent;
+  const content = props.content;
   return (
     <div
       className="p-10 rounded-xl shadow-2xl bg-gray-100 text-white"
@@ -29,9 +29,7 @@ const Card = (props) => {
               <img src={props.imageUrl} alt="" />
             </div>
           )}
-          {rightContent && (
-            <div className="image-container">{props.rightContent}</div>
-          )}
+          {content && <div className="image-container">{props.content}</div>}
         </div>
       </div>
     </div>
