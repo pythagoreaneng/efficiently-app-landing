@@ -4,6 +4,7 @@ import MainMockup from "../img/Mockup1.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
 import { useState } from "react";
+import Waitlist from "../components/Waitlist";
 
 const Home = () => {
   const [cardColor, setCardColor] = useState("#FFD8D7");
@@ -56,13 +57,14 @@ const Home = () => {
             <div className="grid grid-rows-2 gap-4">
               <div className="flex gap-5">
                 <Dot
-                  color={"#FBF689"}
-                  onClick={() => handleCardColor("#FBF689")}
-                />
-                <Dot
                   color={"#C0E5FE"}
                   onClick={() => handleCardColor("#C0E5FE")}
                 />
+                <Dot
+                  color={"#FBF689"}
+                  onClick={() => handleCardColor("#FBF689")}
+                />
+
                 <Dot
                   color={"#BBF5D5"}
                   onClick={() => handleCardColor("#BBF5D5")}
@@ -86,36 +88,15 @@ const Home = () => {
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
-          image={Face}
+          image={
+            <div className="animation-pulse">
+              <img className="animation-bounce" src={Face} />
+            </div>
+          }
         />
       </div>
 
-      <div className="my-10 rounded-xl shadow-2xl bg-gray-100" id="newsletter">
-        <div className="py-28 text-center">
-          <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
-          <p className="mt-2 mb-10 font-thin text-xs">
-            Subscribe to our newsletter to get early access
-          </p>
-
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <input
-              id="email"
-              type="email"
-              name="email"
-              className="rounded-md text-center p-1"
-              placeholder="email@example.com"
-              require
-            />
-            <button
-              type="submit"
-              className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
-            >
-              Join
-            </button>
-          </form>
-        </div>
-      </div>
+      <Waitlist />
     </div>
   );
 };
