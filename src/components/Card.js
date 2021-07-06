@@ -1,6 +1,8 @@
 import React from "react";
 
-function Card(props) {
+const Card = (props) => {
+  const image = props.image;
+  const content = props.content;
   return (
     <div
       className="p-10 rounded-xl shadow-2xl bg-gray-100 text-white"
@@ -22,13 +24,18 @@ function Card(props) {
 
         {/* right container */}
         <div className="">
-          <div className="image-container">
-            <img src={props.imageUrl} alt="" />
-          </div>
+          {image && (
+            <div className="flex justify-center">
+              <img src={props.image} alt="" />
+            </div>
+          )}
+          {content && (
+            <div className="flex justify-center">{props.content}</div>
+          )}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Card;
