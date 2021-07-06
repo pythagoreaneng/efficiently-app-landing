@@ -5,6 +5,7 @@ import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
 import { useState } from "react";
 import Task from "../components/Task";
+import Note from "../components/Note";
 import Waitlist from "../components/Waitlist";
 
 const Home = () => {
@@ -56,6 +57,29 @@ const Home = () => {
           title="Think"
           body="Clear your head of daily clutters and focus on the things most important to you.
           "
+          content={
+            <div>
+              <Note
+                body={
+                  <div>
+                    <div contenteditable="true">
+                      <p>
+                        There is only one success to be able to spend your life
+                        in your own way”
+                      </p>
+                      <p>-Christopher Morley</p>
+                      <br />
+                      <p>
+                        Ways to be successful Stay organized Don’t sweat the
+                        small things.
+                      </p>
+                      <p>Fake it until you make it.</p>
+                    </div>
+                  </div>
+                }
+              />
+            </div>
+          }
         />
 
         <Card

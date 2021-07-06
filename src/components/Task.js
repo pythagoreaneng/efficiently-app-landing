@@ -9,7 +9,7 @@ const Task = (props) => {
 
   return (
     <>
-      <div className="flex w-full ">
+      <div className="flex w-full shadow-2xl">
         <div
           className="flex flex-auto rounded-lg h-12  w-auto items-center  "
           style={{ backgroundColor: "#46BCFF" }}

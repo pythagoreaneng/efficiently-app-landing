@@ -5,7 +5,7 @@ const Card = (props) => {
   const content = props.content;
   return (
     <div
-      className="px-10 py-20 rounded-xl shadow-2xl text-white h-full"
+      className="px-10 py-20 rounded-xl shadow-2xl text-white h-full "
       style={props.style}
     >
       <div className="p-2 text-2xl md:text-4xl font-bold">
@@ -15,7 +15,7 @@ const Card = (props) => {
         </h3>
       </div>
 
-      <div className="grid sm:grid-cols-2 ">
+      <div className="grid xl:grid-cols-2 ">
         {/* left container */}
 
         <div className="px-3 py-20 text-gray-600">
