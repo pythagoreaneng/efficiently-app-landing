@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "../components/Card";
 import MainMockup from "../img/Mockup1.svg";
+import Dot from "../components/Dot";
+import Face from "../img/Face.svg";
+import { useState } from "react";
 
 const Home = () => {
   return (
@@ -44,11 +47,26 @@ const Home = () => {
           style={{ backgroundColor: "#FFD8D7" }}
           title="Play"
           body="Personalize to make planning easy and manage time for people who mean most to you."
+          content={
+            <div className="grid grid-rows-2 gap-4">
+              <div className="flex gap-5">
+                <Dot color={"#FFFC00"} onClick={() => console.log("Clicked")} />
+                <Dot color={"#C0E5FE"} />
+                <Dot color={"#BBF5D5"} />
+              </div>
+              <div className="flex gap-5">
+                <Dot color={"#FFD8D7"} />
+                <Dot color={"#D5D4F5"} />
+                <Dot color={"#F8F8F8"} />
+              </div>
+            </div>
+          }
         />
         <Card
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
+          image={Face}
         />
       </div>
 

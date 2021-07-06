@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = (props) => {
-  const image = props.imageUrl;
+  const image = props.image;
   const content = props.content;
   return (
     <div
@@ -25,11 +25,13 @@ const Card = (props) => {
         {/* right container */}
         <div className="">
           {image && (
-            <div className="image-container">
-              <img src={props.imageUrl} alt="" />
+            <div className="flex justify-center">
+              <img src={props.image} alt="" />
             </div>
           )}
-          {content && <div className="image-container">{props.content}</div>}
+          {content && (
+            <div className="flex justify-center">{props.content}</div>
+          )}
         </div>
       </div>
     </div>
