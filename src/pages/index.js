@@ -4,17 +4,22 @@ import Card from "../components/Card";
 const Home = () => {
   return (
     <div className="m-4 md:m-10">
-      <div className="my-20 text-left">
-        <h1 className="font-bold text-4xl md:text-9xl ">
-          Do <span className="text-blue-400 ">Efficiently</span>
-        </h1>
-        <p>
-          Manage your time and tasks{" "}
-          <span className="text-blue-400 ">Efficiently</span>
-        </p>
-        <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
-          <a href="#newsletter">Early Access</a>
-        </button>
+      <div className="my-20 text-left grid sm:grid-cols-2 grid-wrap">
+        <div>
+          <h1 className="font-bold text-4xl md:text-7xl ">
+            Do <span className="text-blue-400 ">Efficiently</span>
+          </h1>
+          <p>
+            Manage your time and tasks{" "}
+            <span className="text-blue-400 ">Efficiently</span>
+          </p>
+          <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
+            <a href="#newsletter">Early Access</a>
+          </button>
+        </div>
+        <div className="flex justify-center">
+          <img />
+        </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2  md:gap-10">
@@ -48,11 +53,10 @@ const Home = () => {
 
       <div className="my-10 rounded-xl shadow-2xl bg-gray-100" id="newsletter">
         <div className="py-28 text-center">
-      
-            <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
-            <p className="mt-2 mb-10 font-thin text-xs">
-              Subscribe to our newsletter to get early access
-            </p>
+          <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
+          <p className="mt-2 mb-10 font-thin text-xs">
+            Subscribe to our newsletter to get early access
+          </p>
 
           <form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
