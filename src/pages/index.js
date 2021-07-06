@@ -86,7 +86,7 @@ const Home = () => {
           style={{ backgroundColor: "#D5D4F5" }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
-          image={<div className="">Face</div>}
+          image={Face}
         />
       </div>
 
