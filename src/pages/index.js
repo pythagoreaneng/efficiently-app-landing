@@ -2,12 +2,14 @@ import React from "react";
 import Card from "../components/Card";
 import "../App.css";
 import MainMockup from "../img/Mockup1.svg";
+import CalendarMockup from "../img/Calendar.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
 import { useState } from "react";
 import Task from "../components/Task";
 import Note from "../components/Note";
 import Waitlist from "../components/Waitlist";
+import { red } from "jest-matcher-utils/node_modules/chalk";
 
 const Home = () => {
   const [cardColor, setCardColor] = useState("#FFD8D7");
@@ -23,7 +25,9 @@ const Home = () => {
             <p className="font-bold text-4xl sm:text-7xl lg:text-8xl">
               Do <span className="efficiently-blue">Efficiently</span>
             </p>
-            <p className="text-gray-500 pl-2">All-in-One Productivity App</p>
+            <p className="flex justify-center sm:justify-start text-gray-500 pl-2">
+              All-in-One Productivity App
+            </p>
           </div>
 
           <div className="flex justify-center md:justify-start">
@@ -40,12 +44,13 @@ const Home = () => {
 
       <div className="grid gap-4 md:grid-cols-2  md:gap-10">
         <Card
-          style={{ backgroundColor: "#EAEC8C" }}
+          style={{ backgroundColor: "#BBF5D5" }}
           title="Plan"
           body="With a built-in calendar, easily see your tasks, notes, and routines."
+          content={<img className="h-auto w-60 mt-8" src={CalendarMockup} />}
         />
         <Card
-          style={{ backgroundColor: "#447DD2" }}
+          style={{ backgroundColor: "#C0E5FE" }}
           title="Work"
           body="Organize your tasks and create an everyday routine that empowers you."
           content={
@@ -58,7 +63,7 @@ const Home = () => {
           }
         />
         <Card
-          style={{ backgroundColor: "#BBF5D5" }}
+          style={{ backgroundColor: "#FBF689" }}
           title="Think"
           body="Clear your head of daily clutters and focus on the things most important to you.
           "
@@ -67,11 +72,17 @@ const Home = () => {
               <Note
                 body={
                   <div>
-                    <div contentEditable="true" className="font-normal ">
-                      <p>Ways to be successful</p>
-                      <p>-Stay organized</p>
-                      <p>-Don’t sweat the small things.</p>
-                      <p>-Fake it until you make it.</p>
+                    <div
+                      className="font-normal"
+                      style={{ backgroundColor: "#FFFB9E", resize: "none" }}
+                    >
+                      <p>
+                        <p>Ways to be successful</p>
+                        <br />
+                        <p>-Stay organized</p>
+                        <p>-Don’t sweat the small things.</p>
+                        <p>-Fake it until you make it.</p>
+                      </p>
                     </div>
                   </div>
                 }
