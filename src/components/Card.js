@@ -5,13 +5,13 @@ const Card = (props) => {
   const content = props.content;
   return (
     <div
-      className="px-10 py-20 rounded-xl shadow-2xl text-white h-full "
+      className="px-8 py-10 rounded-xl shadow-2xl text-white h-full"
       style={props.style}
     >
-      <div className="p-2 text-2xl sm:text-5xl font-bold">
+      <div className="p-2 text-3xl sm:text-5xl font-bold">
         <h3>
-          <span className="text-white">{props.title}</span>{" "}
-          <span className="text-blue-400">Efficiently</span>
+          <span>{props.title}</span>{" "}
+          <span className="efficiently-blue">Efficiently</span>
         </h3>
       </div>
 
