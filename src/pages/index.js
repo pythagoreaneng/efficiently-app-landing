@@ -23,7 +23,7 @@ const Home = () => {
             <p className="font-bold text-4xl sm:text-7xl lg:text-8xl">
               Do <span className="efficiently-blue">Efficiently</span>
             </p>
-            <p className="text-gray-500">All in One Productivity App</p>
+            <p className="text-gray-500 pl-2">All-in-One Productivity App</p>
           </div>
 
           <div className="flex justify-center md:justify-start">
@@ -92,7 +92,7 @@ const Home = () => {
           title="Play"
           body="Personalize to make planning easy and manage time for people who mean most to you."
           content={
-            <div className="grid grid-rows-2 gap-6 h-full items-center justify-center p-5">
+            <div className="grid grid-rows-2 gap-7 items-center justify-center ">
               <div className="flex gap-5">
                 <Dot
                   color={"#C0E5FE"}

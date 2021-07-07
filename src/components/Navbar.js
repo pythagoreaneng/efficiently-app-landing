@@ -11,10 +11,12 @@ const Navbar = () => {
           <img src={Logo} className="h-16 w-16" />
 
           <div className="pl-2">
-            <h1 className="efficiently-blue font-semibold text-4xl ">
+            <h1 className="efficiently-blue font-semibold text-4xl">
               Efficiently
             </h1>
-            <h2 className="font-thin text-sm">Upgrade Your Efficiency.</h2>
+            <h2 className="font-thin text-sm pl-0.5">
+              Upgrade Your Efficiency.
+            </h2>
           </div>
         </Link>
         <a href="https://twitter.com/doefficiently">
