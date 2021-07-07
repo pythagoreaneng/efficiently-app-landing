@@ -2,12 +2,14 @@ import React from "react";
 import Card from "../components/Card";
 import "../App.css";
 import MainMockup from "../img/Mockup1.svg";
+import CalendarMockup from "../img/Calendar.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
 import { useState } from "react";
 import Task from "../components/Task";
 import Note from "../components/Note";
 import Waitlist from "../components/Waitlist";
+import { red } from "jest-matcher-utils/node_modules/chalk";
 
 const Home = () => {
   const [cardColor, setCardColor] = useState("#FFD8D7");
@@ -43,9 +45,10 @@ const Home = () => {
           style={{ backgroundColor: "#EAEC8C" }}
           title="Plan"
           body="With a built-in calendar, easily see your tasks, notes, and routines."
+          content={<img className="h-auto w-60 mt-8" src={CalendarMockup} />}
         />
         <Card
-          style={{ backgroundColor: "#447DD2" }}
+          style={{ backgroundColor: "#C0E5FE" }}
           title="Work"
           body="Organize your tasks and create an everyday routine that empowers you."
           content={
