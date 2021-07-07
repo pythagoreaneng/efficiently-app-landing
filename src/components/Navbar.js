@@ -10,7 +10,7 @@ const Navbar = ({ toggle }) => {
           <img src={Logo} className="h-16 w-16" />
         </div>
         <div>
-          <h1 className="text-4xl font-semibold text-blue-400 text-left">
+          <h1 className="text-4xl font-semibold efficiently-blue text-left">
             Efficiently
           </h1>
           <h2 className="font-thin text-sm">Upgrade Your Efficiency.</h2>

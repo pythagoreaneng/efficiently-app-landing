@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import "../App.css";
 import MainMockup from "../img/Mockup1.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
@@ -15,17 +16,17 @@ const Home = () => {
   };
 
   return (
-    <div className="m-4 md:m-10">
-      <div className="my-20 text-left grid sm:grid-cols-2 grid-wrap">
+    <div className="m-4 sm:m-10">
+      <div className="text-left grid sm:grid-cols-2 grid-wrap">
         <div>
           <h1 className="font-bold text-4xl md:text-7xl ">
-            Do <span className="text-blue-400 ">Efficiently</span>
+            Do <span className="efficiently-blue">Efficiently</span>
           </h1>
           <p>
             Manage your time and tasks{" "}
-            <span className="text-blue-400 ">Efficiently</span>
+            <span className="efficiently-blue">Efficiently</span>
           </p>
-          <button className="mt-10 px-3 bg-blue-400 rounded-3xl font-medium text-white">
+          <button className="mt-10 px-3 bg-efficiently-blue rounded-3xl font-medium text-white">
             <a href="#newsletter">Early Access</a>
           </button>
         </div>

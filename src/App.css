@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.efficiently-blue {
+  color: #46bcff;
+}
+
+.bg-efficiently-blue {
+  background-color: #46bcff;
+}
