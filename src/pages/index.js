@@ -13,6 +13,7 @@ const Home = () => {
   const handleCardColor = (cardColor) => {
     setCardColor(cardColor);
   };
+
   return (
     <div className="m-4 md:m-10">
       <div className="my-20 text-left grid sm:grid-cols-2 grid-wrap">
@@ -87,7 +88,7 @@ const Home = () => {
           title="Play"
           body="Personalize to make planning easy and manage time for people who mean most to you."
           content={
-            <div className="grid grid-rows-2 gap-4">
+            <div className="grid grid-rows-2 gap-6 h-full items-center justify-center p-5">
               <div className="flex gap-5">
                 <Dot
                   color={"#C0E5FE"}
