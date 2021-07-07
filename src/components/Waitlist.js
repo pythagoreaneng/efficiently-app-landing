@@ -16,13 +16,13 @@ const Waitlist = () => {
               id="email"
               type="email"
               name="email"
-              className="rounded-md text-center p-1"
+              className="rounded-md text-center px-3 py-2"
               placeholder="email@example.com"
               require
             />
             <button
               type="submit"
-              className="m-2 px-2 py-1 text-sm text-white bg-blue-400 rounded-md"
+              className="bg-efficiently-blue m-2 px-3 py-2 text-sm text-white  rounded-md"
             >
               Join
             </button>
