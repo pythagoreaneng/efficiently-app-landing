@@ -8,7 +8,7 @@ const Card = (props) => {
       className="px-8 py-16 rounded-xl shadow-2xl text-white h-full"
       style={props.style}
     >
-      <div className="p-2 text-3xl sm:text-5xl font-bold">
+      <div className=" text-3xl sm:text-5xl font-bold">
         <h3>
           <span>{props.title}</span>{" "}
           <span className="efficiently-blue">Efficiently</span>

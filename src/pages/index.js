@@ -92,7 +92,7 @@ const Home = () => {
           title="Play"
           body="Personalize to make planning easy and manage time for people who mean most to you."
           content={
-            <div className="grid grid-rows-2 gap-6 h-full items-center justify-center p-5">
+            <div className="grid grid-rows-2 gap-7 items-center justify-center ">
               <div className="flex gap-5">
                 <Dot
                   color={"#C0E5FE"}
