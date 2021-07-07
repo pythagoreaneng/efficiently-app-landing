@@ -23,7 +23,7 @@ const Home = () => {
             <p className="font-bold text-4xl sm:text-7xl lg:text-8xl">
               Do <span className="efficiently-blue">Efficiently</span>
             </p>
-            <p className="text-gray-500 pl-2">All in One Productivity App</p>
+            <p className="text-gray-500 pl-2">All-in-One Productivity App</p>
           </div>
 
           <div className="flex justify-center md:justify-start">
