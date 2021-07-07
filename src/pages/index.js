@@ -42,7 +42,7 @@ const Home = () => {
 
       <div className="grid gap-4 md:grid-cols-2  md:gap-10">
         <Card
-          style={{ backgroundColor: "#EAEC8C" }}
+          style={{ backgroundColor: "#BBF5D5" }}
           title="Plan"
           body="With a built-in calendar, easily see your tasks, notes, and routines."
           content={<img className="h-auto w-60 mt-8" src={CalendarMockup} />}
@@ -61,7 +61,7 @@ const Home = () => {
           }
         />
         <Card
-          style={{ backgroundColor: "#BBF5D5" }}
+          style={{ backgroundColor: "#FBF689" }}
           title="Think"
           body="Clear your head of daily clutters and focus on the things most important to you.
           "
@@ -70,11 +70,17 @@ const Home = () => {
               <Note
                 body={
                   <div>
-                    <div contentEditable="true" className="font-normal ">
-                      <p>Ways to be successful</p>
-                      <p>-Stay organized</p>
-                      <p>-Don’t sweat the small things.</p>
-                      <p>-Fake it until you make it.</p>
+                    <div
+                      className="font-normal"
+                      style={{ backgroundColor: "#FFFB9E", resize: "none" }}
+                    >
+                      <p>
+                        <p>Ways to be successful</p>
+                        <br />
+                        <p>-Stay organized</p>
+                        <p>-Don’t sweat the small things.</p>
+                        <p>-Fake it until you make it.</p>
+                      </p>
                     </div>
                   </div>
                 }
