@@ -67,18 +67,11 @@ const Home = () => {
               <Note
                 body={
                   <div>
-                    <div contentEditable="true">
-                      <p>
-                        There is only one success to be able to spend your life
-                        in your own way”
-                      </p>
-                      <p>-Christopher Morley</p>
-                      <br />
-                      <p>
-                        Ways to be successful Stay organized Don’t sweat the
-                        small things.
-                      </p>
-                      <p>Fake it until you make it.</p>
+                    <div contentEditable="true" className="font-normal ">
+                      <p>Ways to be successful</p>
+                      <p>-Stay organized</p>
+                      <p>-Don’t sweat the small things.</p>
+                      <p>-Fake it until you make it.</p>
                     </div>
                   </div>
                 }
@@ -92,7 +85,7 @@ const Home = () => {
           title="Play"
           body="Personalize to make planning easy and manage time for people who mean most to you."
           content={
-            <div className="grid grid-rows-2 gap-7 items-center justify-center ">
+            <div className="grid grid-rows-2 gap-7 items-center justify-center">
               <div className="flex gap-5">
                 <Dot
                   color={"#C0E5FE"}
