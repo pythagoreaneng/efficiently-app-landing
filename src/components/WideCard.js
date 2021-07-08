@@ -1,7 +1,6 @@
 import React from "react";
 
 const WideCard = (props) => {
-  const image = props.image;
   const content = props.content;
   return (
     <>

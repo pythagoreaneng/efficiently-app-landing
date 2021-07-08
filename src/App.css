@@ -37,6 +37,10 @@
   }
 }
 
+.ring-color {
+  --tw-ring-color: rgb(255, 120, 120, var(--tw-ring-opacity));
+}
+
 .efficiently-blue {
   color: #46bcff;
 }
