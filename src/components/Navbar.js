@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to="/" className="flex justify-center">
           <img src={Logo} className="h-16 w-16" />
 
-          <div className="pl-2 ">
+          <div className="pl-2">
             <h1 className="efficiently-blue font-semibold text-4xl">
               Efficiently
             </h1>

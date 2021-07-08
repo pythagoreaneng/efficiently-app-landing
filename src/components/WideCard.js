@@ -13,12 +13,12 @@ const WideCard = (props) => {
           <span className="efficiently-blue">Efficiently</span>
         </div>
 
-        <div className="flex h-72 w-auto items-center justify-center">
-          {props.content}
-        </div>
+        <div className="grid">
+          <div className="flex h-72 w-auto items-center justify-center">
+            {props.content}
+          </div>
 
-        <div className="text-gray-500 h-full text-center">
-          <p>{props.body}</p>
+          <div className="flex justify-center text-gray-500">{props.body}</div>
         </div>
       </div>
     </>
