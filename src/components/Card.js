@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <>
       <div
-        className="px-8 py-16 rounded-xl shadow-2xl text-white h-full"
+        className="px-8 py-16 rounded-xl shadow-lg text-white h-full"
         style={props.style}
       >
         <div className="text-3xl sm:text-5xl font-bold">
