@@ -8,7 +8,7 @@ export default function Header() {
         <h1 className="m-auto">
           <div className="grid grid-col">
             <p className="flex justify-center font-bold text-4xl sm:text-7xl lg:text-8xl ">
-              Do &nbsp;
+              Do&nbsp;
               <span className="efficiently-blue">Efficiently</span>
             </p>
             <p className="flex justify-center md:justify-start text-gray-500 pl-2">
