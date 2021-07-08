@@ -16,7 +16,7 @@ const Card = (props) => {
           </h3>
         </div>
 
-        <div className="grid xl:grid-cols-2 h-full ">
+        <div className="grid xl:grid-cols-2 h-full">
           <div className="text-gray-500 pt-8 pl-4">
             <p>{props.body}</p>
           </div>
