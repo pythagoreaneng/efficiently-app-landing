@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <>
       <div
-        className="px-8 py-16 rounded-xl shadow-2xl text-white h-full"
+        className="px-8 pt-16 pb-24 rounded-xl shadow-lg text-white h-full"
         style={props.style}
       >
         <div className="text-3xl sm:text-5xl font-bold">
@@ -17,11 +17,11 @@ const Card = (props) => {
         </div>
 
         <div className="grid xl:grid-cols-2 h-full">
-          <div className="text-gray-600 h-full mt-10">
+          <div className="text-gray-500 pt-8 pl-4">
             <p>{props.body}</p>
           </div>
 
-          <div className="flex h-72 items-center justify-center">
+          <div className=" flex items-center justify-center">
             {props.content}
           </div>
         </div>
