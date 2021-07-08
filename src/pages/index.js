@@ -1,8 +1,8 @@
 import React from "react";
+import Header from "../components/Header";
 import Card from "../components/Card";
 import WideCard from "../components/WideCard";
 import "../App.css";
-import MainMockup from "../img/Mockup1.svg";
 import CalendarMockup from "../img/Calendar.svg";
 import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
@@ -20,30 +20,8 @@ const Home = () => {
 
   return (
     <>
+      <Header />
       <div className="grid m-4 sm:m-10 gap-4 md:gap-10">
-        <div className="flex justify-center text-left grid md:grid-cols-2 grid-wrap  h-full">
-          <h1 className="sm:m-auto">
-            <div className="grid grid-col justify-center ">
-              <p className="font-bold text-4xl sm:text-7xl lg:text-8xl">
-                Do <span className="efficiently-blue">Efficiently</span>
-              </p>
-              <p className="flex justify-center sm:justify-start text-gray-500 pl-2">
-                All-in-One Productivity App
-              </p>
-            </div>
-
-            <div className="flex justify-center md:justify-start">
-              <button className="bg-efficiently-blue rounded-3xl font-medium text-white p-3 my-8">
-                <a href="#newsletter">Early Access</a>
-              </button>
-            </div>
-          </h1>
-
-          <div className="flex justify-center  my-10">
-            <img className="h-auto w-72" src={MainMockup} />
-          </div>
-        </div>
-
         <div className="grid gap-4 md:grid-cols-2 md:gap-10">
           <Card
             style={{ backgroundColor: "#BBF5D5" }}
