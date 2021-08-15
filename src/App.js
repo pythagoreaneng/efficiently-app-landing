@@ -1,19 +1,14 @@
-import "./App.css";
-import { Switch, Route } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages";
-import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
-      <Footer />
-    </>
+    </Router>
   );
 }
 
