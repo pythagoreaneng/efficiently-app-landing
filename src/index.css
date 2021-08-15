@@ -4,16 +4,16 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", "Segoe UI", -apple-system, BlinkMacSystemFont, "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "Poppins", "Segoe UI", -apple-system, BlinkMacSystemFont,
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Poppins", "Segoe UI", source-code-pro, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Poppins", "Segoe UI", source-code-pro, Monaco, Consolas,
+    "Courier New", monospace;
 }
 
 .card {
@@ -26,4 +26,16 @@ code {
 
 .blue-pulse {
   @apply animate-pulse hover:text-blue-500;
+}
+
+.ring-color {
+  --tw-ring-color: rgb(255, 120, 120, var(--tw-ring-opacity));
+}
+
+.efficiently-blue {
+  color: #46bcff;
+}
+
+.bg-efficiently-blue {
+  background-color: #46bcff;
 }

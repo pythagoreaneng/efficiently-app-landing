@@ -1,16 +1,17 @@
-import React from "react";
-import Header from "../components/Header";
-import Card from "../components/Card";
-import WideCard from "../components/WideCard";
-import "../App.css";
+import React, { useState } from "react";
 import CalendarMockup from "../img/Calendar.svg";
-import Dot from "../components/Dot";
 import Face from "../img/Face.svg";
-import { useState } from "react";
-import Task from "../components/Task";
-import Note from "../components/Note";
-import Waitlist from "../components/Waitlist";
-import { red } from "jest-matcher-utils/node_modules/chalk";
+import {
+  Card,
+  Dot,
+  Footer,
+  Header,
+  Navbar,
+  Note,
+  Task,
+  Waitlist,
+  WideCard,
+} from "../components";
 
 const Home = () => {
   const [cardColor, setCardColor] = useState("#FFD8D7");
@@ -20,6 +21,7 @@ const Home = () => {
 
   return (
     <>
+      <Navbar />
       <Header />
       <div className="grid m-4 sm:m-10 gap-4 md:gap-10">
         <div className="grid gap-4 md:grid-cols-2 md:gap-10">
@@ -48,26 +50,20 @@ const Home = () => {
             body="Clear your head of daily clutters and focus on the things most important to you.
           "
             content={
-              <div>
-                <Note
-                  body={
-                    <div>
-                      <div
-                        className="font-normal"
-                        style={{ backgroundColor: "#FFFB9E", resize: "none" }}
-                      >
-                        <p>
-                          <p>Ways to be successful</p>
-                          <br />
-                          <p>-Stay organized</p>
-                          <p>-Don’t sweat the small things.</p>
-                          <p>-Fake it until you make it.</p>
-                        </p>
-                      </div>
-                    </div>
-                  }
-                />
-              </div>
+              <Note
+                body={
+                  <div
+                    className="font-normal"
+                    style={{ backgroundColor: "#FFFB9E", resize: "none" }}
+                  >
+                    <p>Ways to be successful</p>
+                    <br />
+                    <p>-Stay organized</p>
+                    <p>-Don’t sweat the small things.</p>
+                    <p>-Fake it until you make it.</p>
+                  </div>
+                }
+              />
             }
           />
 
@@ -118,6 +114,7 @@ const Home = () => {
 
         <Waitlist />
       </div>
+      <Footer />
     </>
   );
 };
