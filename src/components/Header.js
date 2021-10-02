@@ -13,16 +13,21 @@ export default function Header() {
           <p className="flex justify-center md:justify-start text-gray-500 pl-2">
             All-in-One Productivity App
           </p>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start gap-3">
             <button className="bg-efficiently-blue rounded-3xl font-medium text-white p-3 my-8">
               <a href="#newsletter">Join the Waitlist</a>
+            </button>
+            <button className="bg-gray-300 rounded-3xl font-medium text-white p-3 my-8">
+              <a href="https://github.com/pythagoreaneng/efficiently-app-web">
+                See on GitHub
+              </a>
             </button>
           </div>
         </div>
       </div>
 
       <div className="flex flex-1 w-full justify-center">
-        <img className="w-72" src={Mockup} />
+        <img className="w-72" alt="mockup" src={Mockup} />
       </div>
     </div>
   );

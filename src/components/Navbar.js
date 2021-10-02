@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-center sm:justify-between m-5">
       <Link to="/" className="flex justify-center">
-        <img src={Logo} className="h-10 w-10 sm:h-16 sm:w-16" />
+        <img src={Logo} alt="logo" className="h-10 w-10 sm:h-16 sm:w-16" />
 
         <div className="flex flex-col justify-center items-center">
           <div className="pl-2 flex flex-col">
@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
       </Link>
       <a href="https://twitter.com/doefficiently" className="hidden sm:flex">
-        <img className="h-7 w-auto" src={Twitter} />
+        <image className="h-7 w-auto" src={Twitter} />
       </a>
     </div>
   );
