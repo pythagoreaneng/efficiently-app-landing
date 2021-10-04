@@ -29,7 +29,13 @@ const Home = () => {
             style={{ backgroundColor: "#BBF5D5" }}
             title="Plan"
             body="With a built-in calendar, easily see your tasks, notes, and routines."
-            content={<img className="h-auto w-60" src={CalendarMockup} />}
+            content={
+              <img
+                className="h-auto w-60"
+                alt="calendar"
+                src={CalendarMockup}
+              />
+            }
           />
           <Card
             style={{ backgroundColor: "#C0E5FE" }}
@@ -109,7 +115,9 @@ const Home = () => {
           }}
           title="Live"
           body="Priortize your efficiency all in one place to give you the peace of mind to enjoy your life."
-          content={<img className="animate-bounce" src={Face} />}
+          content={
+            <img className="animate-bounce" alt="face-icon" src={Face} />
+          }
         />
 
         <Waitlist />
