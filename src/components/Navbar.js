@@ -5,7 +5,7 @@ import Twitter from "../img/Twitter.svg";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-center sm:justify-between m-5">
+    <div className="flex items-center justify-center sm:justify-between m-5 ">
       <Link to="/" className="flex justify-center">
         <img src={Logo} alt="logo" className="h-10 w-10 sm:h-16 sm:w-16" />
 
