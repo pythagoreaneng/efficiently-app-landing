@@ -15,7 +15,7 @@ export default function Header() {
           </p>
           <div className="flex justify-center md:justify-start gap-3">
             <button className="bg-efficiently-blue rounded-3xl font-medium text-white p-3 my-8">
-              <a href="#newsletter">Join the Waitlist</a>
+              <a href="#newsletter">Request Beta Access</a>
             </button>
             <button className="bg-gray-300 rounded-3xl font-medium text-white p-3 my-8">
               <a href="https://github.com/pythagoreaneng/efficiently-app-web">

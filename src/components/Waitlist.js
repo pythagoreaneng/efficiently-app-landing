@@ -4,9 +4,9 @@ const Waitlist = () => {
   return (
     <div className="rounded-xl shadow-2xl bg-gray-100" id="newsletter">
       <div className="py-28 text-center">
-        <p className="font-bold text-3xl md:text-5xl">Join the Waitlist</p>
+        <p className="font-bold text-3xl md:text-5xl">Request Beta Access</p>
         <p className="mt-2 mb-10 font-thin text-xs">
-          Subscribe to our newsletter to get early access
+          Subscribe to our newsletter to join our beta program
         </p>
 
         <form name="contact" method="POST" data-netlify="true">
