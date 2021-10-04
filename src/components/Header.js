@@ -14,10 +14,10 @@ export default function Header() {
             All-in-One Productivity App
           </p>
           <div className="flex justify-center md:justify-start gap-3">
-            <button className="bg-efficiently-blue rounded-3xl font-medium text-white p-3 my-8">
+            <button className="bg-efficiently-blue rounded-3xl font-medium text-white p-3 my-8 hover:opacity-90">
               <a href="#newsletter">Request Beta Access</a>
             </button>
-            <button className="bg-gray-300 rounded-3xl font-medium text-white p-3 my-8">
+            <button className="bg-gray-300 rounded-3xl font-medium text-white p-3 my-8 hover:opacity-90">
               <a href="https://github.com/pythagoreaneng/efficiently-app-web">
                 See on GitHub
               </a>
